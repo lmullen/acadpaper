@@ -37,7 +37,6 @@
 % Use the geometry package to set correct margins
 \RequirePackage[
 	centering,			% topmarg:botmarg::rmarg:lmarg::1:1
-	paper=letter,		% paper size is letter
 	portrait=true,		% portrait orientation
 	lmargin=1in,		% left margin 
 	rmargin=1in,		% right margin 
