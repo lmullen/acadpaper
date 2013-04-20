@@ -15,7 +15,7 @@
 
 % IDENTIFICATION %%%%%%%%%%
 % Identify the class name and version
-\ProvidesClass{acadpaper}[2012/12/28 v0.2 LaTeX academic paper class]
+\ProvidesClass{acadpaper}[2013/04/20 v0.3 LaTeX academic paper class]
 % This class depends on LaTeX 
 \NeedsTeXFormat{LaTeX2e}
 
