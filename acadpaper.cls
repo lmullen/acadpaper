@@ -74,7 +74,7 @@
         \@author
     \end{tabular}\par}%
     \vskip 1em%
-    {\large \@date}%
+    {\normalsize \@date}%
   \end{center}%
   \par
 \vskip 1em}
