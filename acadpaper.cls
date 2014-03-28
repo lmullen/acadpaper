@@ -34,7 +34,6 @@
 \LoadClass{article}
 % Make the font Palatino
 \usepackage[osf]{mathpazo}
->>>>>>> 64885094f8beb67c879f830a1ea057fbbe9b2c5b
 % Use the geometry package to set correct margins
 \RequirePackage[
   centering,			% topmarg:botmarg::rmarg:lmarg::1:1
