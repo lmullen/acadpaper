@@ -15,7 +15,7 @@
 
 % IDENTIFICATION %%%%%%%%%%
 % Identify the class name and version
-\ProvidesClass{acadpaper}[2011/02/17 v0.1 LaTeX academic paper class]
+\ProvidesClass{acadpaper}[2013/04/20 v0.3 LaTeX academic paper class]
 % This class depends on LaTeX 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -34,14 +34,15 @@
 \LoadClass{article}
 % Make the font Palatino
 \usepackage[osf]{mathpazo}
+>>>>>>> 64885094f8beb67c879f830a1ea057fbbe9b2c5b
 % Use the geometry package to set correct margins
 \RequirePackage[
-	centering,			% topmarg:botmarg::rmarg:lmarg::1:1
-	portrait=true,		% portrait orientation
-	lmargin=1in,		% left margin 
-	rmargin=1in,		% right margin 
-	tmargin=1in,		% top margin 
-	bmargin=1in,		% bottom margin 
+  centering,			% topmarg:botmarg::rmarg:lmarg::1:1
+  portrait=true,		% portrait orientation
+  lmargin=1in,		% left margin 
+  rmargin=1in,		% right margin 
+  tmargin=1in,		% top margin 
+  bmargin=1in,		% bottom margin 
 ]
 {geometry}
 % Load the package which will let us make the main text double-spaced
@@ -55,10 +56,30 @@
 \doublespacing
 % But we don't want the title double-spaced. So at the beginning of the document, make the title within a single-spaced environment.
 \AtBeginDocument{
-	\begin{singlespace}
-		\maketitle
-	\end{singlespace}
+  \begin{singlespace}
+    \maketitle
+  \end{singlespace}
 }
+
+
+\renewcommand{\@maketitle}{%
+  \null
+  \vspace{-0.375in}%
+  \begin{center}%
+    \let \footnote \thanks
+    {\large \textbf \@title \par}%
+    \vskip 1.0em%
+    {\normalsize
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+    \end{tabular}\par}%
+    \vskip 1em%
+    {\normalsize \@date}%
+  \end{center}%
+  \par
+\vskip 1em}
+
 % Anything needed for the end of the document goes here
 \AtEndDocument{
 }
