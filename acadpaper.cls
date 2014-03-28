@@ -33,7 +33,7 @@
 % Load the article class, which is being modified
 \LoadClass{article}
 % Make the font Palatino
-\usepackage{mathpazo}
+\usepackage[osf]{mathpazo}
 % Use the geometry package to set correct margins
 \RequirePackage[
 	centering,			% topmarg:botmarg::rmarg:lmarg::1:1
