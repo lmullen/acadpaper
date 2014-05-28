@@ -15,7 +15,7 @@
 
 % IDENTIFICATION %%%%%%%%%%
 % Identify the class name and version
-\ProvidesClass{acadpaper}[2013/04/20 v0.3 LaTeX academic paper class]
+\ProvidesClass{acadpaper}[2014/05/28 v0.4 LaTeX academic paper class]
 % This class depends on LaTeX 
 \NeedsTeXFormat{LaTeX2e}
 
@@ -84,3 +84,6 @@
 }
 % Define an environment for the bibliographic information of a reviewed book.
 \newenvironment{reviewedbook}{\begin{quote}}{\end{quote}}
+
+\def\thoughtbreak#1{\bigskip\bigskip\noindent{\lowercase{\sc #1}}}
+
